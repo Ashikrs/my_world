@@ -1,0 +1,197 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a1a2e;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content h1 span {
+    color: #f39c12;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+.hero-image {
+    max-width: 400px;
+    /* Set a max width for larger screens */
+    flex: 1;
+    /* Allow the image to take remaining space */
+}
+
+.hero-image img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Allow flex items to wrap on smaller screens */
+}
+
+.card {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Hover effect */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        align-items: center;
+        /* Center-align items */
+    }
+
+    .hero-image {
+        max-width: 100%;
+        /* Allow full width for smaller screens */
+        margin-top: 20px;
+        /* Add margin to separate from text */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        /* Adjust heading size for mobile */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        /* Adjust paragraph size for mobile */
+    }
+
+    .service-cards {
+        flex-direction: column;
+        /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        /* Make the cards larger for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        /* Make cards fit better on very small screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
